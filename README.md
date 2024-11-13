@@ -64,7 +64,7 @@ The project structure is organized into separate Django apps to keep code modula
    python manage.py runserver
    ```
 
-***Access the app in your browser at http://127.0.0.1:8000 ***
+**Access the app in your browser at http://127.0.0.1:8000**
 
 ---
 
