@@ -42,27 +42,27 @@ The project structure is organized into separate Django apps to keep code modula
   ```
 3. **Install Dependencies**
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 4. **Apply Migrations**
   
-```bash
-python3 -m venv env
-source env/bin/activate  # On Linux/Mac
-# or
-env\Scripts\activate  # On Windows
-```
+   ```bash
+   python3 -m venv env
+   source env/bin/activate  # On Linux/Mac
+   # or
+   env\Scripts\activate  # On Windows
+   ```
 5. **Create a Superuser**
 
-```bash
-python manage.py createsuperuser
-```
+   ```bash
+   python manage.py createsuperuser
+   ```
 6.**Run the Development Server**
 
-```bash
-python manage.py runserver
-```
+   ```bash
+   python manage.py runserver
+   ```
 
 ***Access the app in your browser at http://127.0.0.1:8000 ***
 
@@ -107,10 +107,10 @@ After setting up the server, access the Django admin panel at http://127.0.0.1:8
 --- 
 
 **Requirements**
--Python 3.x
--Django 3.x+
--Database: SQLite (default), can be configured for PostgreSQL or MySQL
--Dependencies: Listed in requirements.txt
+- **Python 3.x
+- **Django 3.x+
+- **Database:** SQLite (default), can be configured for PostgreSQL or MySQL
+- **Dependencies:** Listed in requirements.txt
 
 *For additional customization, modify the configurations in settings.py, including database, email, and any other Django settings.*
 
