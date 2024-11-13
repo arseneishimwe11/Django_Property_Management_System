@@ -89,22 +89,22 @@ property_management/
 
 ### Features
 
-**User Management:** Create and manage user accounts and profiles.
-**Property Management:** Record properties with details like addresses, descriptions, and availability.
-**Tenant Management:** Manage tenant information, including lease records and linking tenants to properties.
-**CRUD Functionality:** Each module supports full CRUD (Create, Read, Update, Delete) operations.
-**Relational Data** Management: Link properties to tenants and manage these relationships.
-**Authentication:** Secure login system for property managers.
+- **User Management:** Create and manage user accounts and profiles.
+- **Property Management:** Record properties with details like addresses, descriptions, and availability.
+- **Tenant Management:** Manage tenant information, including lease records and linking tenants to properties.
+- **CRUD Functionality:** Each module supports full CRUD (Create, Read, Update, Delete) operations.
+- **Relational Data** Management: Link properties to tenants and manage these relationships.
+- **Authentication:** Secure login system for property managers.
 
 ---
 
 ### Usage
 After setting up the server, access the Django admin panel at http://127.0.0.1:8000/admin to manage properties, tenants, and users. Use the Django interface to create, view, update, or delete records for each module.
 
-**Login:** Use the superuser credentials created during setup.
-**Manage Users:** Add or modify user accounts via the Users module.
-**Add Properties:** Register new properties in the Properties module with relevant details.
-**Assign Tenants:** Link tenants to properties through the Tenants module.
+- **Login:** Use the superuser credentials created during setup.
+- **Manage Users:** Add or modify user accounts via the Users module.
+- **Add Properties:** Register new properties in the Properties module with relevant details.
+- **Assign Tenants:** Link tenants to properties through the Tenants module.
 
 --- 
 
