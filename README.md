@@ -34,12 +34,12 @@ The project structure is organized into separate Django apps to keep code modula
    ```
 2. **Set Up a Virtual Environment**
   
-  ```bash
-  python3 -m venv env
-  source env/bin/activate  # On Linux/Mac
-  # or
-  env\Scripts\activate  # On Windows
-  ```
+   ```bash
+   python3 -m venv env
+   source env/bin/activate  # On Linux/Mac
+   # or
+   env\Scripts\activate  # On Windows
+   ```
 3. **Install Dependencies**
 
    ```bash
@@ -71,6 +71,7 @@ The project structure is organized into separate Django apps to keep code modula
 ### Project Structure
 Here's an overview of the main project files and directories
 
+```plaintext
 property_management/
 ├── property_management/  # Project configuration files
 │   ├── settings.py       # Django settings
@@ -82,6 +83,7 @@ property_management/
 ├── templates/            # HTML templates for rendering views
 ├── manage.py             # Django command-line utility
 └── requirements.txt      # Project dependencies
+```
 
 ---
 
@@ -107,8 +109,8 @@ After setting up the server, access the Django admin panel at http://127.0.0.1:8
 --- 
 
 **Requirements**
-- **Python 3.x
-- **Django 3.x+
+- **Python 3.x**
+- **Django 3.x+**
 - **Database:** SQLite (default), can be configured for PostgreSQL or MySQL
 - **Dependencies:** Listed in requirements.txt
 
