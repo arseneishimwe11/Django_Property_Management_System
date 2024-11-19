@@ -4,73 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Management System</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        .button {
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .feature {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            margin: 10px;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Welcome to the Property Management System</h1>
-        <p>Your one-stop solution for managing properties and tenants</p>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">Welcome to the Property Management System</h1>
+            <p class="mt-2">Your one-stop solution for managing properties and tenants</p>
+        </div>
     </header>
-    <div class="container">
-        <h2>Features</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Manage Properties</h3>
-                <p>Efficiently manage your properties with ease.</p>
+    <div class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="feature bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold">Manage Properties</h3>
+                <p class="mt-2 text-gray-600">Efficiently manage your properties with ease.</p>
             </div>
-            <div class="feature">
-                <h3>Tenant Records</h3>
-                <p>Keep track of tenant information and history.</p>
+            <div class="feature bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold">Tenant Records</h3>
+                <p class="mt-2 text-gray-600">Keep track of tenant information and history.</p>
             </div>
-            <div class="feature">
-                <h3>Maintenance Requests</h3>
-                <p>Track and manage maintenance requests seamlessly.</p>
+            <div class="feature bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold">Maintenance Requests</h3>
+                <p class="mt-2 text-gray-600">Track and manage maintenance requests seamlessly.</p>
             </div>
         </div>
-        <a class="button" href="{% url 'property_list' %}">View Properties</a>
-        <a class="button" href="{% url 'tenant_list' %}">View Tenants</a>
+        <div class="mt-6 flex justify-center space-x-4">
+            <a class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition duration-300" href="{% url 'property_list' %}">View Properties</a>
+            <a class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition duration-300" href="{% url 'tenant_list' %}">View Tenants</a>
+        </div>
     </div>
 </body>
 </html>

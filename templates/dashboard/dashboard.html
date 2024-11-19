@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mx-auto mt-5">
+  <h1 class="text-3xl font-bold">Dashboard</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+    <div class="p-4 bg-blue-100 rounded shadow">
+      <h2 class="text-xl">Total Properties</h2>
+      <p class="text-2xl font-bold">{{ metrics.total_properties }}</p>
+    </div>
+    <div class="p-4 bg-green-100 rounded shadow">
+      <h2 class="text-xl">Active Tenants</h2>
+      <p class="text-2xl font-bold">{{ metrics.active_tenants }}</p>
+    </div>
+    <div class="p-4 bg-yellow-100 rounded shadow">
+      <h2 class="text-xl">Pending Requests</h2>
+      <p class="text-2xl font-bold">{{ metrics.pending_maintenance_requests }}</p>
+    </div>
+    <div class="p-4 bg-purple-100 rounded shadow">
+      <h2 class="text-xl">Monthly Income</h2>
+      <p class="text-2xl font-bold">${{ metrics.monthly_income }}</p>
+    </div>
+  </div>
+
+  <div class="mt-8">
+    <canvas id="incomeChart"></canvas>
+  </div>
+</div>
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('incomeChart').getContext('2d');
+  const incomeChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May"],  // Replace with real data
+      datasets: [{
+        label: 'Monthly Income',
+        data: [1200, 1500, 1000, 2000, 1800],  // Replace with real data
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: { beginAtZero: true },
+      },
+    },
+  });
+</script>

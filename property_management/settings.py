@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'properties',
     'tenants',
     'Users',
+    'dashboard',
 
 ]
 
